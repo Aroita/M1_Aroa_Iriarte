@@ -1,0 +1,110 @@
+
+
+*{
+    margin: 1%;
+    padding: 0;
+}
+
+body{
+    margin: auto;
+
+}
+
+.logo{
+    width: 80px;
+    display: block;
+    margin: auto;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+    padding: 1%;
+    width: 100%;
+}
+
+.nav-2{
+    text-align: center;
+}
+
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    overflow-x: auto;
+    
+}
+  
+tr:nth-of-type(odd) { 
+    background: rgb(218, 216, 218); 
+}
+
+tr:hover { 
+    background: rgb(219, 218, 218); 
+}
+th { 
+    background: #333; 
+    color: white; 
+    font-weight: bold; 
+}
+td, th { 
+    padding: 6px; 
+    border: 1px solid #ccc; 
+    text-align: left; 
+}
+
+.bt-ver {
+    padding: 0px 3px 0px 3px;
+    background-color: rgb(2, 189, 2);
+}
+
+.bt-ver:hover{
+    padding: 0px 3px 0px 3px;
+    background-color: rgb(156, 252, 156);
+}
+
+.bt-edit{
+    padding: 0px 3px 0px 3px;
+    background-color: rgb(5, 154, 223);
+}
+
+.bt-edit:hover{
+    padding: 0px 3px 0px 3px;
+    background-color: rgb(154, 220, 250);
+}
+
+.bt-delet{
+    padding: 0px 5px 0px 4px;
+    background-color: rgb(255, 0, 0);
+}
+
+.bt-delet:hover{
+    padding: 0px 5px 0px 4px;
+    background-color: rgb(250, 164, 164);
+}
+
+form{
+    background-color: gainsboro;
+    padding: 2%;
+}
+
+.product-container{
+    margin: 10%;
+    width: 100%;
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    
+}
+
+#width_form{
+    width: 60%;
+    margin: auto;
+}
+
+footer{
+    margin-top: 100px;
+    
+}
+

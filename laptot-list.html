@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de productos</title>
+    <link rel="stylesheet" href="css/stylo-list.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="sign-in.html"><i class="fas fa-user"></i>Inicia Sesión</a>
+      <a href="sign-up.html"><i class="fas fa-user-plus"></i>Registrarse</a>
+    </nav>
+    <img class="logo" src="img/Logo-PC.png" alt="logo">
+  </header>
+  <br>
+    <div class="row">
+
+    </div>
+    <nav class="nav-2">
+        <a href="laptot-list.html">PRODUCTOS</a>
+        <a href="laptot-view.html">CARACTERISTICAS</a>
+        <a href="manufacturer-view.html">FABRICANTES</a>
+        
+        
+      </nav>
+      <br>
+
+      <div style="overflow-x:auto;">
+      <table>
+        <thead class="f0">
+            <tr >
+              <th class="t1">Id</th>
+              <th class="t2">Imagen</th>
+              <th class="t1">Modelo</th>
+              <th class="t2">Fabricante</th>
+              <th class="t1">Precio</th>
+              <th class="t2">Ram</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><a href="laptot-view.html"><img width="80px" height="80px" src="img/Predator Helios 300 PH315.jpg" alt=""></a></td>
+              <td>Predator Helios 300 PH315</td>
+              <td><a href="manufacturer-view.html"> Acer</td></a>
+              <td>1434,19€</td>
+              <td>16GB</td>
+              
+              
+              <td>
+                <a href="laptot-view.html"><button class="bt-ver"><i class="fas fa-eye"></i></button></a>
+                <a href="laptot-detail.html"><button class="bt-edit"><i class="fas fa-edit"></i></button></a>
+                <a href="#"><button class="bt-delet" type="button"><i class="fas fa-trash-alt"></i></button></a>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><a href="laptot-view.html"><img width="80px" height="80px" src="img/Chromebook Z1500CN.jpg" alt=""></a></td>
+              <td>Chromebook Z1500CN</td>
+              <td><a href="manufacturer-view.html"> Asus</td></a>
+              <td>349€</td>
+              <td>8GB</td>
+              <td>
+                <a href="laptot-view.html"><button class="bt-ver"><i class="fas fa-eye"></i></button></a>
+                <a href="laptot-detail.html"><button class="bt-edit"><i class="fas fa-edit"></i></button></a>
+                <a href="#"><button class="bt-delet" type="button"><i class="fas fa-trash-alt"></i></button></a>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><a href="laptot-view.html"><img width="80px" height="80px" src="img/15S-fq2005ns.jpg" alt=""></a></td>
+              <td>15S-fq2005ns</td>
+              <td><a href="manufacturer-view.html"> Hp</td></a>
+              <td>535€</td>
+              <td>8GB</td>
+              <td>
+                <a href="laptot-view.html"><button class="bt-ver"><i class="fas fa-eye"></i></button></a>
+                <a href="laptot-detail.html"><button class="bt-edit"><i class="fas fa-edit"></i></button></a>
+                <a href="#"><button class="bt-delet" type="button"><i class="fas fa-trash-alt"></i></button></a>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><a href="laptot-view.html"><img width="80px" height="80px" src="img/GP66 Leopard 10UE.jpg" alt=""></a></td>
+              <td>GP66 Leopard 10UE</td>
+              <td><a href="manufacturer-view.html"> Msi</td></a>
+              <td>1499€</td>
+              <td>16GB</td>
+              <td>
+                <a href="laptot-view.html"><button class="bt-ver"><i class="fas fa-eye"></i></button></a>
+                <a href="laptot-detail.html"><button class="bt-edit"><i class="fas fa-edit"></i></button></a>
+                <a href="#"><button class="bt-delet" type="button"><i class="fas fa-trash-alt"></i></button></a>
+              </td>
+            </tr>
+          </tbody>
+      </table>
+      </div>
+      <br>
+      <!-- Footer -->
+      <footer class="bg-dark text-center text-white">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          2020 ©  Todos los derechos reservados.
+          <a class="text-dark" href="laptot-list.html">website.com</a>
+        </div>
+      </footer>
+
+      <!-- JQuery -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+      <!-- JS, eliminar filas -->
+      <script>
+        $(function () {
+          $(".bt-delet").click(function() {
+
+            if(confirm("¿estas seguro?")) {
+              $(this).parents('tr').hide();
+            
+            }
+        });
+    
+        });
+        </script>
+      
+    
+</body>
+</html>
