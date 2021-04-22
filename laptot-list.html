@@ -14,24 +14,25 @@
 </head>
 <body>
   <header>
-    <nav>
-      <a href="sign-in.html"><i class="fas fa-user"></i>Inicia Sesión</a>
-      <a href="sign-up.html"><i class="fas fa-user-plus"></i>Registrarse</a>
-    </nav>
-    <img class="logo" src="img/Logo-PC.png" alt="logo">
-  </header>
-  <br>
-    <div class="row">
-
-    </div>
-    <nav class="nav-2">
-        <a href="laptot-list.html">PRODUCTOS</a>
-        <a href="laptot-view.html">CARACTERISTICAS</a>
-        <a href="manufacturer-view.html">FABRICANTES</a>
-        
-        
+       <!-- nav -->
+       <nav>
+        <a href="sign-in.html"><i class="fas fa-user"></i>Iniciar Sesión</a>
+        <a href="sign-up.html"><i class="fas fa-user-plus"></i>Registrarse</a>
       </nav>
-      <br>
+      <a href="laptot-list.html"><img class="logo" src="img/Logo-PC.png" alt="logo"></a>
+
+    <br>
+      <div class="row">
+
+      </div>
+      <nav class="nav-2">
+          <a href="laptot-list.html">INICIO</a>
+          <a href="laptot-view.html">PRODUCTO</a>
+          <a href="manufacturer-view.html">FABRICANTES</a>
+          <a href="laptot-detail.html"><button>Crear producto +</button></a>
+      </nav>
+        <br>
+    </header>
 
       <div style="overflow-x:auto;">
       <table>
@@ -66,7 +67,7 @@
               <td>2</td>
               <td><a href="laptot-view.html"><img width="80px" height="80px" src="img/Chromebook Z1500CN.jpg" alt=""></a></td>
               <td>Chromebook Z1500CN</td>
-              <td><a href="manufacturer-view.html"> Asus</td></a>
+              <td><a href="manufacturer-view.html"> Asus</a></td>
               <td>349€</td>
               <td>8GB</td>
               <td>
@@ -79,7 +80,7 @@
               <td>3</td>
               <td><a href="laptot-view.html"><img width="80px" height="80px" src="img/15S-fq2005ns.jpg" alt=""></a></td>
               <td>15S-fq2005ns</td>
-              <td><a href="manufacturer-view.html"> Hp</td></a>
+              <td><a href="manufacturer-view.html"> Hp</a></td>
               <td>535€</td>
               <td>8GB</td>
               <td>
@@ -92,7 +93,7 @@
               <td>4</td>
               <td><a href="laptot-view.html"><img width="80px" height="80px" src="img/GP66 Leopard 10UE.jpg" alt=""></a></td>
               <td>GP66 Leopard 10UE</td>
-              <td><a href="manufacturer-view.html"> Msi</td></a>
+              <td><a href="manufacturer-view.html"> Msi</a></td>
               <td>1499€</td>
               <td>16GB</td>
               <td>
@@ -106,6 +107,9 @@
       </div>
       <br>
       <!-- Footer -->
+
+
+
       <footer class="bg-dark text-center text-white">
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
           2020 ©  Todos los derechos reservados.
@@ -117,18 +121,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
       <!-- JS, eliminar filas -->
-      <script>
-        $(function () {
-          $(".bt-delet").click(function() {
-
-            if(confirm("¿estas seguro?")) {
-              $(this).parents('tr').hide();
-            
-            }
-        });
-    
-        });
-        </script>
+      <script src="js/script.js"></script>
       
     
 </body>

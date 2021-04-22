@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalles</title>
+    <title>Registro</title>
     <link rel="stylesheet" href="css/stylo-list.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
@@ -19,17 +19,19 @@
         <a href="sign-in.html"><i class="fas fa-user"></i>Inicia Sesión</a>
         <a href="sign-up.html"><i class="fas fa-user-plus"></i>Registrarse</a>
       </nav>
-      <img class="logo" src="img/Logo-PC.png" alt="logo">
-    </header>
+      <a href="laptot-list.html"><img class="logo" src="img/Logo-PC.png" alt="logo"></a>
+
     <br>
       <div class="row">
-  
+
       </div>
       <nav class="nav-2">
-        <a href="laptot-list.html">PRODUCTOS</a>
-        <a href="laptot-view.html">CARACTERISTICAS</a>
-        <a href="manufacturer-view.html">FABRICANTES</a>
+          <a href="laptot-list.html">INICIO</a>
+          <a href="laptot-view.html">PRODUCTO</a>
+          <a href="manufacturer-view.html">FABRICANTES</a>
+          <a href="laptot-detail.html"><button>Crear producto +</button></a>
       </nav>
+        <br>
     </header>
 
     <form id="width_form" class="row g-3 needs-validation" novalidate>
@@ -52,24 +54,28 @@
             <label for="exampleInputEmail1" class="form-label">Email</label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
-          </div>
-          <div class="mb-3">
+        </div>
+        <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Contraseña</label>
             <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
+        </div>
+        <div class="form-outline mb-4">
+            <label class="form-label" for="form6Example6">Phone</label>
+            <input type="number" id="form6Example6" class="form-control" />
+        </div>
         <div class="col-12">
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
             <label class="form-check-label" for="invalidCheck">
                 Acepta los términos y condiciones
             </label>
-            <div class="invalid-feedback">
+              <div class="invalid-feedback">
               You must agree before submitting.
             </div>
           </div>
         </div>
         <div class="col-12">
-          <button class="btn btn-primary" type="submit">Enviar</button>
+          <button class="btn btn-primary" type="submit">Registrarse</button>
         </div>
       </form>
 

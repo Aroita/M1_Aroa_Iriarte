@@ -30,7 +30,7 @@ nav a{
 
 
 table { 
-    width: 100%; 
+    width: 100%;
     border-collapse: collapse; 
     overflow-x: auto;
     
@@ -87,6 +87,7 @@ td, th {
 form{
     background-color: gainsboro;
     padding: 2%;
+    margin: 0 14% 0 14%;
 }
 
 .product-container{
@@ -105,6 +106,7 @@ form{
 
 footer{
     margin-top: 100px;
+
     
 }
 
